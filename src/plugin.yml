@@ -1,0 +1,17 @@
+name: MobsReward
+main: fr.plx0wn.MobsReward
+depend: [Vault]
+author: [lucluc52, Plx0wn]
+version: 0.1
+
+commands:
+   rewards:
+      default: op
+      description: Main command.
+permissions:
+   rewards.admin:
+      default: op
+      description: Allow players to use admin commands.
+   rewards.get:
+      default: op
+      description: Allow players to get rewards.
