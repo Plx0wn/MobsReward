@@ -2,7 +2,7 @@ name: MobsReward
 main: fr.plx0wn.MobsReward
 depend: [Vault]
 author: [lucluc52, Plx0wn]
-version: 0.1
+version: 0.2
 
 commands:
    rewards:
