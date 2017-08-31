@@ -11,16 +11,16 @@ players:
 
 mobs:
    blaze: 18.0
-   cave-spider: 15.0
+   cave_spider: 15.0
    creeper: 15.0
    enderman: 20.0
    endermite: 20.0
-   ender-dragon: 150.0
+   ender_dragon: 150.0
    ghast: 25.0
    giant: 80.0
    guardian: 100.0
-   magma-cube: 3.0
-   pig-zombie: 12.0
+   magma_cube: 3.0
+   pig_zombie: 12.0
    shulker: 18.0
    silverfish: 13.0
    skeleton: 8.0
@@ -28,7 +28,7 @@ mobs:
    spider: 8.0
    witch: 20.0
    wither: 100.0
-   wither-skeleton: 15.0
+   wither_skeleton: 15.0
    zombie: 8.0
 
 enabled:
@@ -37,14 +37,14 @@ enabled:
    creeper: true
    enderman: true
    endermite: true
-   ender-dragon: true
+   ender_dragon: true
    ghast: true
    giant: true
    guardian: true
-   magma-cube: true
-   pig-zombie: true
-   player-death: true
-   player-kill: true
+   magma_cube: true
+   pig_zombie: true
+   player_death: true
+   player_kill: true
    shulker: true
    silverfish: true
    skeleton: true
@@ -52,5 +52,5 @@ enabled:
    spider: true
    witch: true
    wither: true
-   wither-skeleton: true
+   wither_skeleton: true
    zombie: true
