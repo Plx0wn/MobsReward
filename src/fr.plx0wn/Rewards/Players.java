@@ -37,7 +37,7 @@ public class Players implements Listener {
 					MobsReward.economy.depositPlayer(player.getName(), playersKill)
 							.transactionSuccess();
 					player.sendMessage(
-							Utils.ColoredString(msgconf.getString("players.kill")).replace("<reward>", "" + playersKill));
+							Utils.ColoredString(msgconf.getString("players.kill")).replace("<reward>", "" + playersKill).replace("<player>", e.getEntity().getName()));
 				}
 			}
 		}
