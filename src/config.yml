@@ -12,13 +12,17 @@ players:
 mobs:
    blaze: 18.0
    cave_spider: 15.0
-   creeper: 15.0
+   creeper: 10.0
+   elder_guardian: 100.0
    enderman: 20.0
    endermite: 20.0
+   evoker: 15.0
    ender_dragon: 150.0
    ghast: 25.0
    giant: 80.0
-   guardian: 100.0
+   guardian: 12.0
+   husk: 12.0
+   illusioner:
    magma_cube: 3.0
    pig_zombie: 12.0
    shulker: 18.0
@@ -26,31 +30,87 @@ mobs:
    skeleton: 8.0
    slime: 3.0
    spider: 8.0
+   stray: 15.0
+   vex: 3.0
+   vindicator: 15.0
    witch: 20.0
    wither: 100.0
    wither_skeleton: 15.0
    zombie: 8.0
+   zombie_villager: 10.0
+
+neutrals:
+   bat: -5.0
+   chicken: -8.0
+   cow: -8.0
+   donkey: -12.0
+   horse: -10.0
+   iron_golem: -15.0
+   llama: -12.0
+   mule: -12.0
+   ocelot: -10.0
+   parrot: -10.0
+   pig: -8.0
+   polar_bear: -500.0 # poor polar bear!
+   rabbit: -5.0
+   sheep: -8.0
+   snowman: -6.0
+   squid: -4.0
+   villager: -30.0
+   wolf: -15.0
+   
 
 enabled:
+   # Players
+   player_death: true
+   player_kill: true
+
+   # Mobs
    blaze: true
    cave-spider: true
    creeper: true
+   elder_guardian: true
    enderman: true
    endermite: true
+   evoker: true
    ender_dragon: true
    ghast: true
    giant: true
    guardian: true
+   husk: true
+   illusioner: true
    magma_cube: true
    pig_zombie: true
-   player_death: true
-   player_kill: true
    shulker: true
    silverfish: true
    skeleton: true
    slime: true
    spider: true
+   stray: true
+   vex: true
+   vindicator: true
    witch: true
    wither: true
    wither_skeleton: true
    zombie: true
+   zombie_villager: true
+   
+   # Neutrals
+   bat: false
+   chicken: false
+   cow: false
+   donkey: false
+   horse: false
+   iron_golem: false
+   llama: false
+   mule: false
+   ocelot: false
+   parrot: false
+   pig: false
+   polar_bear: false
+   rabbit: false
+   sheep: false
+   snowman: false
+   squid: false
+   villager: false
+   wolf: false
