@@ -14,6 +14,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import fr.plx0wn.Rewards.Mobs;
+import fr.plx0wn.Rewards.Neutrals;
 import fr.plx0wn.Rewards.Players;
 import net.milkbowl.vault.economy.Economy;
 
@@ -35,6 +36,7 @@ public class MobsReward extends JavaPlugin {
 
 		Bukkit.getServer().getPluginManager().registerEvents(new Mobs(), this);
 		Bukkit.getServer().getPluginManager().registerEvents(new Players(), this);
+		Bukkit.getServer().getPluginManager().registerEvents(new Neutrals(), this);
 	}
 
 	private void createFiles() {
