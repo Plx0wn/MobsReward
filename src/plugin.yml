@@ -2,7 +2,7 @@ name: MobsReward
 main: fr.plx0wn.MobsReward
 depend: [Vault]
 author: [lucluc52, Plx0wn]
-version: 0.2
+version: 0.3
 
 commands:
    rewards:
@@ -12,6 +12,10 @@ permissions:
    rewards.admin:
       default: op
       description: Allow players to use admin commands.
-   rewards.get:
+   rewards.all:
       default: op
-      description: Allow players to get rewards.
+      description: Allow players to get rewards with all entities.
+      children:
+         rewards.mobs.*: true
+         rewards.neutrals.*: true
+         rewards.players.*: true
