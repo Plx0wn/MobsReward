@@ -27,17 +27,19 @@ public class Players implements Listener {
 			EntityType type = e.getEntityType();
 
 			if (type.equals(EntityType.PLAYER)) {
-				if (config.getBoolean("enabled.player-death")){
-					MobsReward.economy.withdrawPlayer(player.getName(), playersDeath)
-							.transactionSuccess();
-					player.sendMessage(
-							Utils.ColoredString(msgconf.getString("players.death")).replace("<loss>", "" + playersDeath));
+				if (config.getBoolean("enabled.player-death")) {
+					if (player.hasPermission("rewards.players.death") || player.hasPermission("rewards.players.*")) {
+						MobsReward.economy.withdrawPlayer(player.getName(), playersDeath).transactionSuccess();
+						player.sendMessage(Utils.ColoredString(msgconf.getString("players.death")).replace("<loss>",
+								"" + playersDeath));
+					}
 				}
-				if (config.getBoolean("enabled.player-kill")){
-					MobsReward.economy.depositPlayer(player.getName(), playersKill)
-							.transactionSuccess();
-					player.sendMessage(
-							Utils.ColoredString(msgconf.getString("players.kill")).replace("<reward>", "" + playersKill).replace("<player>", e.getEntity().getName()));
+				if (config.getBoolean("enabled.player-kill")) {
+					if (player.hasPermission("rewards.players.kill") || player.hasPermission("rewards.players.*")) {
+						MobsReward.economy.depositPlayer(player.getName(), playersKill).transactionSuccess();
+						player.sendMessage(Utils.ColoredString(msgconf.getString("players.kill"))
+								.replace("<reward>", "" + playersKill).replace("<player>", e.getEntity().getName()));
+					}
 				}
 			}
 		}
